@@ -1,11 +1,28 @@
 package block6personcontrollers;
 
-// Clase Persona. La usaré para devolver un objeto JSON
-public class Persona {
+import org.springframework.beans.factory.annotation.Qualifier;
+import org.springframework.context.annotation.Bean;
+import org.springframework.stereotype.Component;
 
+// Clase Persona. La usaré para devolver un objeto JSON
+@Component("bean")
+public class Persona {
     private String nombre;
     private int edad;
     private String ciudad;
+
+    public Persona(){
+        this.nombre = nombre;
+        this.edad = edad;
+        this.ciudad = ciudad;
+    }
+
+
+    public Persona(String nombre, int edad, String ciudad){
+        this.nombre = nombre;
+        this.edad = edad;
+        this.ciudad = ciudad;
+    }
 
     public String getNombre() {return nombre;}
 

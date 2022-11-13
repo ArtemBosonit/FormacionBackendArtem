@@ -1,0 +1,13 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="Local Profile" type="Application" factoryName="Application">
+    <envs>
+      <env name="spring.profiles.active" value="local" />
+      <env name="bd.url" value="localhost:5432" />
+    </envs>
+    <option name="MAIN_CLASS_NAME" value="block5profiles.Block5ProfilesApplication" />
+    <module name="block5-profiles" />
+    <method v="2">
+      <option name="Make" enabled="true" />
+    </method>
+  </configuration>
+</component>

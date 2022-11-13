@@ -7,7 +7,7 @@ import org.springframework.stereotype.Component;
 @Component
 
 public class Clase3 implements CommandLineRunner {
-    @Value("${new.property:new.property no tiene valor.}")
+    @Value("${new.property:new.property no tiene valor.}") // Asigno el valor que no existe en el fichero application.properties
     private String mensaje3;
 
     @Override

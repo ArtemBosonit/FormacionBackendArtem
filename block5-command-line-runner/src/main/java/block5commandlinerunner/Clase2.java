@@ -1,3 +1,4 @@
+
 package block5commandlinerunner;
 
 import org.springframework.boot.CommandLineRunner;
@@ -11,7 +12,7 @@ import org.springframework.context.annotation.Configuration;
 @EnableAutoConfiguration
 public class Clase2 {
     //Ejercicio 1
-    @Bean
+    @Bean //Sirve para enviar el método a la clase principal, desde dónde se ejecutará el programa
     CommandLineRunner ejecutaclase2()
     {
         return args ->
@@ -19,5 +20,6 @@ public class Clase2 {
             System.out.println("Hola desde clase secundaria");
         };
     }
-}
 
+
+}

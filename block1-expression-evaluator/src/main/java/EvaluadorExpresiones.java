@@ -16,17 +16,17 @@ public class EvaluadorExpresiones {
         BufferedReader br = null;
         int numero1 = 2, numero2 = 4;
         DateFormat formatoFecha = new SimpleDateFormat("yyyy/MM/dd");
-        Date fecha1 = new Date(122,11,31);
+        Date fecha1 = new Date(122, 11, 31);
         // El año empieza en 1900, así que le sumo 122 para que me devuelva 2022. El mes de diciembre es 11 porque
         //el programa entiende que el primer mes es 0.
-        Date fecha2 = new Date(122,0,01);
+        Date fecha2 = new Date(122, 0, 01);
         String fechaencadena1 = formatoFecha.format(fecha1);
         String fechaencadena2 = formatoFecha.format(fecha2);
 
         // Indico la ruta del archivo y establezco las condiciones para poder sacar los datos del fichero.
         try {
 
-            archivoex = new File("evaluadorexpresiones.txt");
+            archivoex = new File("src/evaluadorexpresiones.txt");
             fr = new FileReader(archivoex);
             br = new BufferedReader(fr);
 
@@ -56,9 +56,10 @@ public class EvaluadorExpresiones {
                         System.out.println("No existe ninguno de los enteros en el fichero");
                     }
                     // Si la línea contiene las cadenas de texto, me imprime la frase.
-                } if (linea.contains("Hello") && linea.contains("World") && linea.contains("!")) {
+                }
+                if (linea.contains("Hello") && linea.contains("World") && linea.contains("!")) {
                     // Me concatena esas cadenas con el signo de exclamación.
-                    if (linea.contains("+")){
+                    if (linea.contains("+")) {
                         String frase = "Hello" + " " + "World" + "!";
                         System.out.println(frase);
                         // Me repite esas cadenas con el signo de exclamación.
@@ -71,11 +72,12 @@ public class EvaluadorExpresiones {
                         System.out.println("No existe ninguna de las cadenas de texto en el fichero");
                     }
                     // Si la línea contiene la fecha la convierto en String antes de imprimir la frase.
-                } if (linea.contains(fechaencadena1) && linea.contains(fechaencadena2)) {
-                    if (linea.contains("<")){
+                }
+                if (linea.contains(fechaencadena1) && linea.contains(fechaencadena2)) {
+                    if (linea.contains("<")) {
                         String contenidofecha = fechaencadena1 + " < " + fechaencadena2;
                         System.out.println(contenidofecha);
-                    } else if (linea.contains(">")){
+                    } else if (linea.contains(">")) {
                         String contenidofecha2 = fechaencadena1 + " > " + fechaencadena2;
                         System.out.println(contenidofecha2);
                     } else {

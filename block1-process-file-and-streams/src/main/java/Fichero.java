@@ -15,7 +15,7 @@ public class Fichero {
 
         // Indico la ruta del archivo y establezco las condiciones para poder sacar los datos del fichero.
         try {
-            archivo = new File("people.csv");
+            archivo = new File("src/people.csv");
             fr = new FileReader(archivo);
             br = new BufferedReader(fr);
 

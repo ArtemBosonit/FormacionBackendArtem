@@ -9,6 +9,7 @@ public class Block5ProfilesApplication {
 
 	public static void main(String[] args) {
 		SpringApplication.run(Block5ProfilesApplication.class, args);
+
 	}
 
 }
