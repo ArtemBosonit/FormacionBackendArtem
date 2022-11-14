@@ -1,13 +1,13 @@
-package block5logging;
+package block6pathvariableheaders;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class Block5LoggingApplication {
+public class Block6PathVariableHeadersApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(Block5LoggingApplication.class, args);
+		SpringApplication.run(Block6PathVariableHeadersApplication.class, args);
 	}
 
 }
